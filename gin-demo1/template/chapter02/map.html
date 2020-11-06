@@ -1,0 +1,23 @@
+{{define "chapter02/map.html"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map</title>
+</head>
+<body>
+<h1>Map</h1>
+{{/*简单类型的map_data*/}}
+{{/*{{.}}<br>*/}}
+{{/*{{.name}}-{{.age}}*/}}
+
+{{/*嵌套的map_data*/}}
+{{.}}<br>
+{{.map_data}}<br>
+{{.map_data.name}}<br>
+{{.map_data.age}}<br>
+{{.map_data1}}<br>
+{{.map_data1.age}}
+</body>
+</html>
+{{end}}

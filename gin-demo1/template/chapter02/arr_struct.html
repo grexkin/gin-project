@@ -1,0 +1,22 @@
+{{define "chapter02/arr_struct.html"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ArrayStruct</title>
+</head>
+<body>
+<h1>ArrayStruct</h1>
+{{/*第一种方式*/}}
+{{range .}}
+    {{.Id}}-{{.Name}}-{{.Age}}-{{.Address}}<br>
+{{end}}
+{{/*第二种方式*/}}
+<br>
+{{/*$i可以省略*/}}
+{{range $i,$v := .}}
+    {{$i}}-{{$v.Id}}-{{$v.Name}}-{{$v.Age}}-{{$v.Address}}<br>
+{{end}}
+</body>
+</html>
+{{end}}

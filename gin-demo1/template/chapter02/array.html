@@ -1,0 +1,20 @@
+{{define "chapter02/array.html"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+<h1>Array</h1>
+{{/*//第一种循环方式*/}}
+{{range .}}
+    {{.}}<br>
+{{end}}
+{{/*第二种循环方式*/}}
+{{range $i,$v := .}}
+    {{$i}}-{{$v}}
+{{end}}
+</body>
+</html>
+{{end}}
